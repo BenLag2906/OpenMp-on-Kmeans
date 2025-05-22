@@ -1,10 +1,8 @@
-OpenMP est une bibliothèque supportée par plusieurs langages (C,C++ et Fortran) disponible sur plusieurs plate-formes (Linux, Windows, OS X, ...). OpenMP regroupe des directives de compilation et des fonctions. Le compilateur gcc supporte OpenMP depuis la version 4.2, en ajoutant simplement une option sur la ligne de commande et en incluant le fichier d'en-têtes omp.h. La gestion des différentes fonctions est assurée par la libraire libgomp.
+OpenMP is a library supported by several languages ​​(C, C++, and Fortran) and available on several platforms (Linux, Windows, OS X, etc.). OpenMP combines compiler directives and functions. The gcc compiler has supported OpenMP since version 4.2, simply by adding an option to the command line and including the omp.h header file. The various functions are managed by the libgomp library.
 
-Dans la suite de cet article, nous présenterons différents exemples pour découvrir OpenMP. Seule la parallélisation des boucles sera abordée dans cet article. OpenMP permet d'accélérer les calculs sans devoir gérer les threads « à la main ». Il est bien sûr possible de gérer finement les threads avec OpenMP.
+In the rest of this article, we will present various examples to help you discover OpenMP. Only loop parallelization will be discussed in this article. OpenMP allows you to speed up calculations without having to manage threads "by hand." It is, of course, possible to fine-tune thread management with OpenMP.
 
-
-
-Pour commencer, un programme élémentaire va être pris comme exemple pour montrer l'utilisation générale d'OpenMP. Ce programme est présenté ci-dessous, la boucle représente le traitement de différents éléments de manière séquentielle.
+To begin, a basic program will be used as an example to demonstrate the general use of OpenMP. This program is presented below; the loop represents the sequential processing of different elements.
 
 #include<stdio.h>
 
