@@ -4,20 +4,3 @@ In the rest of this article, we will present various examples to help you discov
 
 To begin, a basic program will be used as an example to demonstrate the general use of OpenMP. This program is presented below; the loop represents the sequential processing of different elements.
 
-#include<stdio.h>
-
-#include<stdlib.h>
-
-int main (int argc, char const *argv[]){
-
-  int n;
-
-  for(n=0;n<8;n++){
-
-    printf("Element %d traité\n",n);
-
-  }
-
-  return EXIT_SUCCESS;
-
-}
